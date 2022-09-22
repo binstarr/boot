@@ -35,8 +35,6 @@ import javax.swing.JFrame;
 			// 등록을 해주어야 한다.
 			button.addActionListener(this);
 		}
-
-		// 재정의 됨!!
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("콜백 메서드");

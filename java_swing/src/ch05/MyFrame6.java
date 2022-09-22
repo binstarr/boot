@@ -30,25 +30,26 @@ public class MyFrame6 extends JFrame {
 		this.addMouseListener(new MyMouseListener());	
 		}
 	
-	// 내부 클래스 생성
-	private class MyMouseListener extends MouseAdapter { //MouseAdapter 추상 클래스라서 내가 클래스 만들어서 위에 new로 사용 추상클래스는 new 불가
-		
-		// 사용하고 싶은 기능만 재정의 가능하다.
-		@Override
-		public void mouseClicked(MouseEvent e) {
-			int x = e.getX();
-			int y = e.getY();
-			
-			System.out.println("x : " + x);
-			System.out.println("y : " + y);
-		}
-		@Override
+		// 내부 클래스 생성
+		private class MyMouseListener extends MouseAdapter { // MouseAdapter 추상 클래스라서 내가 클래스 만들어서 위에 new로 사용 추상클래스는 new
+																// 불가
+
+			// 사용하고 싶은 기능만 재정의 가능하다.
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				int x = e.getX();
+				int y = e.getY();
+
+				System.out.println("x : " + x);
+				System.out.println("y : " + y);
+			}
+
+			@Override
 			public void mouseEntered(MouseEvent e) {
 				System.out.println("마우스 포커스가 프레임 안으로 들어 왔습니다.");
 			}
-		
 
-	}// end of inner class
+		}// end of inner class
 	
 //	public abstract class Mouse 
 	

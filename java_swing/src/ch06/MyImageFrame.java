@@ -82,11 +82,11 @@ public class MyImageFrame extends JFrame {
 	private void initData() {
 		setSize(500, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		playerLabel = new JLabel(new ImageIcon("player2.png")); // 1.객체 생성 , 초기화 단계
-		backgroundLabel = new JLabel(new ImageIcon("bc.jpg"));
+		playerLabel = new JLabel(new ImageIcon("images/player2.png")); // 1.객체 생성 , 초기화 단계
+		backgroundLabel = new JLabel(new ImageIcon("images/bc.jpg"));
 		
 		try {
-			bufferedImage = ImageIO.read(new File("bc.jpg"));
+			bufferedImage = ImageIO.read(new File("images/bc.jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -104,7 +104,7 @@ public class MyImageFrame extends JFrame {
 		
 		// 좌표 기반 배치 관리자
 		// 사이즈 , 위치
-		playerLabel.setSize(200, 200);
+		playerLabel.setSize(50, 50);
 		playerLabel.setLocation(100, 100);
 //		this.add(playerLabel);
 		myImagePanel.add(playerLabel);

@@ -79,11 +79,11 @@ public class MyImageFrame4 extends JFrame {
 	private void initData() {
 		setSize(500, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		playerLabel = new JLabel(new ImageIcon("player2.png")); // 1.객체 생성 , 초기화 단계
-		backgroundLabel = new JLabel(new ImageIcon("bc.jpg"));
+		playerLabel = new JLabel(new ImageIcon("Images/player2.png")); // 1.객체 생성 , 초기화 단계
+		backgroundLabel = new JLabel(new ImageIcon("Images/bc.jpg"));
 		
 		try {
-			bufferedImage = ImageIO.read(new File("bc.jpg"));
+			bufferedImage = ImageIO.read(new File("Images/bc.jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

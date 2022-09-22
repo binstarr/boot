@@ -29,10 +29,10 @@ public class Test extends JFrame {
 	private void initData() {
 		setSize(1200, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		ballLabel = new JLabel(new ImageIcon("player2.png"));
+		ballLabel = new JLabel(new ImageIcon("Images/player2.png"));
 		
 		try {
-			ball = ImageIO.read(new File("player2.png"));
+			ball = ImageIO.read(new File("Images/player2.png"));
 		} catch (IOException e) {
 			System.out.println("사진이 없거나 경로가 잘못 되었습니다.");
 			e.printStackTrace();

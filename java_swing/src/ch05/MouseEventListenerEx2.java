@@ -76,4 +76,7 @@ public class MouseEventListenerEx2 extends JFrame {
 		});
 	}
 
+	public static void main(String[] args) {
+		new MouseEventListenerEx2();
+	}
 }
